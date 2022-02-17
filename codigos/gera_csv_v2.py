@@ -50,6 +50,11 @@ def geraRelatorioUnidade(unidade,nome_arq_notas_dados,selecao,nome_arq_sigaa,nom
 
 
 
-#mostraColunas("lop_exercicios_2022_02_15_t01.csv")
-geraRelatorioUnidade(3,"lop_exercicios_2022_02_15_t01.csv",[1,2,3,4],"turma_01_2021_2.csv","notas_uniao_u3_completo_teste.csv")
+mostraColunas("lop_exercicios_02_2022_02_16_rudson.csv")
+# Turma 01 - 2021.2 - Orivaldo 
+#geraRelatorioUnidade(3,"lop_exercicios_2022_02_15_t01.csv",[1,2,3,4],"turma_01_2021_2.csv","notas_uniao_u3_completo_teste.csv")
+# Turma 02 - 2021.2 - Rudson
+geraRelatorioUnidade(3,"lop_exercicios_02_2022_02_16_rudson.csv",[1,10,14,15,16],"turma_02_2021_2_rudson.csv","notas_uniao_u3_completo_ruds.csv")
+
+#As listas são: Repetição Contda - lista de exercicios, Vetores - Ressolvida, Vetores - Prática , Vetores - Lista de Exercícios.
 
