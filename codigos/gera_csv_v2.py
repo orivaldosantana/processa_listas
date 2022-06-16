@@ -47,14 +47,14 @@ def geraRelatorioUnidade(unidade,nome_arq_notas_dados,selecao,nome_arq_sigaa,nom
 #print(notas_u2.iloc[0:10,0] )
 
 
-
-
-
-mostraColunas("lop_exercicios_01_2022_05_14_rudson.csv")
+# Turma 02 - 2022.1 - Orivaldo 
+mostraColunas("lop_exercicios_t02_2022_06_09_oriva.csv")
+geraRelatorioUnidade(1,"lop_exercicios_t02_2022_06_09_oriva.csv",[1,2,3,4,5,6,7],"turma_02_2022_1_oriva.csv","notas_uniao_u1_completo.csv")
 # Turma 01 - 2021.2 - Orivaldo 
 #geraRelatorioUnidade(3,"lop_exercicios_2022_02_15_t01.csv",[1,2,3,4],"turma_01_2021_2.csv","notas_uniao_u3_completo_teste.csv")
 # Turma 02 - 2021.2 - Rudson
-geraRelatorioUnidade(1,"lop_exercicios_01_2022_05_14_rudson.csv",[1,2,3,4,5,6,7],"turma_03_2022_1_rudson.csv","notas_uniao_u1_completo.csv")
+#geraRelatorioUnidade(1,"lop_exercicios_01_2022_05_14_rudson.csv",[1,2,3,4,5,6,7],"turma_03_2022_1_rudson.csv","notas_uniao_u1_completo.csv")
+#mostraColunas("lop_exercicios_01_2022_05_14_rudson.csv")
 #geraRelatorioUnidade(3,"lop_exercicios_02_2022_02_16_rudson.csv",[1,10,14,15,16],"turma_02_2021_2_rudson.csv","notas_uniao_u3_completo_ruds.csv")
 
 #As listas são: Repetição Contda - lista de exercicios, Vetores - Ressolvida, Vetores - Prática , Vetores - Lista de Exercícios.
