@@ -4,7 +4,7 @@ import pandas as pd
 def padroniza_sigaa(notas_u, turma_sig):
     # converte o campo matrícula para inteiro
     #notas_u.loc[:, 'Matrícula'] = notas_u.loc[:, 'Matrícula'].astype(int)
-    notas_u['Matrícula'] = notas_u['Matrícula'].apply( lambda coment: int(coment)  ) 
+    notas_u['Matrícula'] = notas_u['Matrícula'].apply( lambda m: int(m)  ) 
     # junta dois data-frames pela matrícula
     notas_uniao_u = pd.merge(turma_sig, notas_u, how='left', on='Matrícula')
     return notas_uniao_u

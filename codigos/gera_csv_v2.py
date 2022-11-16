@@ -2,22 +2,33 @@ import processa_notas as pn
 import pandas as pd
 
 
-def mostraColunas(nome_arq_notas_dados):
-    notas_dados = pd.read_csv("../dados/{}".format(nome_arq_notas_dados) )
-    cont = 0
-    for l in notas_dados.columns:
-        print(cont,l)
-        cont = cont + 1  
+def mostraColunas(nome_arq_notas_dados):  
+
+    try:
+        notas_dados = pd.read_csv("../dados/{}".format(nome_arq_notas_dados) )
+        cont = 0
+        for l in notas_dados.columns:
+            print(cont,l)
+            cont = cont + 1  
+    except FileNotFoundError:
+        msg = "O arquivo '../dados/{}' não existe.".format(nome_arq_notas_dados)
+        print(msg)
+
+    
 
 # Unidade pode assumir valores 1, 2 e 3
 def geraRelatorioUnidade(unidade,nome_arq_notas_dados,selecao,nome_arq_sigaa,nome_arq_saida):
     
     # Obtem os dados dos alunos para
     # organizar de acordo com as matrículas do SIGAA 
-    turma_sigaa = pd.read_csv("../dados/{}".format(nome_arq_sigaa))
-
-    # Mostra os dados dos primeiros estudantes da turma 
-    print(turma_sigaa.head())
+    try:
+        turma_sigaa = pd.read_csv("../dados/{}".format(nome_arq_sigaa))
+        # Mostra os dados dos primeiros estudantes da turma 
+        print(turma_sigaa.head())
+    except :
+        msg = "O arquivo '../dados/{}' não existe.".format(nome_arq_sigaa)
+        print(msg)
+  
 
     # Leitura dos dados das notas das listas do sistema LoP
     notas_dados = pd.read_csv("../dados/{}".format(nome_arq_notas_dados) )
@@ -47,9 +58,13 @@ def geraRelatorioUnidade(unidade,nome_arq_notas_dados,selecao,nome_arq_sigaa,nom
 #print(notas_u2.iloc[0:10,0] )
 
 
+# Turma 02 - 2022.2 - Orivaldo 
+mostraColunas("lop_exercicios_turma02-2022-11-07.csv")
+geraRelatorioUnidade(1,"lop_exercicios_turma02-2022-11-07.csv",[1,2,3,4,5,6,7],"alunos_turma_02_2022_2.csv","notas_uniao_u1_completo.csv")
+
 # Turma 02 - 2022.1 - Orivaldo 
-mostraColunas("lop_exercicios_t02_2022_06_09_oriva.csv")
-geraRelatorioUnidade(1,"lop_exercicios_t02_2022_06_09_oriva.csv",[1,2,3,4,5,6,7],"turma_02_2022_1_oriva.csv","notas_uniao_u1_completo.csv")
+#mostraColunas("lop_exercicios_t02_2022_06_09_oriva.csv")
+#geraRelatorioUnidade(1,"lop_exercicios_t02_2022_06_09_oriva.csv",[1,2,3,4,5,6,7],"turma_02_2022_1_oriva.csv","notas_uniao_u1_completo.csv")
 # Turma 01 - 2021.2 - Orivaldo 
 #geraRelatorioUnidade(3,"lop_exercicios_2022_02_15_t01.csv",[1,2,3,4],"turma_01_2021_2.csv","notas_uniao_u3_completo_teste.csv")
 # Turma 02 - 2021.2 - Rudson
