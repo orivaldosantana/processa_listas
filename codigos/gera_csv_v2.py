@@ -59,6 +59,11 @@ def geraRelatorioUnidade(unidade,nome_arq_notas_dados,selecao,nome_arq_sigaa,nom
 
 
 # Turma 02 - 2022.2 - Orivaldo 
+mostraColunas("lop_turma_02-2023-05-12.csv")
+#geraRelatorioUnidade(1,"lop_exercicios_turma02-2022-11-07.csv",[1,2,3,4,5,6,7],"alunos_turma_02_2022_2.csv","notas_uniao_u1_completo.csv")
+
+
+# Turma 02 - 2022.2 - Orivaldo 
 #mostraColunas("lop_exercicios_turma02-2022-11-07.csv")
 #geraRelatorioUnidade(1,"lop_exercicios_turma02-2022-11-07.csv",[1,2,3,4,5,6,7],"alunos_turma_02_2022_2.csv","notas_uniao_u1_completo.csv")
 
@@ -69,7 +74,7 @@ def geraRelatorioUnidade(unidade,nome_arq_notas_dados,selecao,nome_arq_sigaa,nom
 
 
 # Turma 02 - 2022.2 - Orivaldo - U3
-geraRelatorioUnidade(3,"lop_exercicios_turma02-2022-12-13.csv",[1,13,14,15],"alunos_turma_02_2022_2.csv","notas_uniao_u3_completo.csv")
+#geraRelatorioUnidade(3,"lop_exercicios_turma02-2022-12-13.csv",[1,13,14,15],"alunos_turma_02_2022_2.csv","notas_uniao_u3_completo.csv")
 
 
 
