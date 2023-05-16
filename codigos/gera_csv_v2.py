@@ -58,9 +58,9 @@ def geraRelatorioUnidade(unidade,nome_arq_notas_dados,selecao,nome_arq_sigaa,nom
 #print(notas_u2.iloc[0:10,0] )
 
 
-# Turma 02 - 2022.2 - Orivaldo 
-mostraColunas("lop_turma_02-2023-05-12.csv")
-geraRelatorioUnidade(1,"lop_exercicios_turma02-2022-11-07.csv",[1,2,3,4,5,6,7],"alunos_turma_02_2022_2.csv","notas_uniao_u1_completo.csv")
+# Turma 02 - 2023.1 - Orivaldo 
+mostraColunas("lop_turma_02-2023-05-16.csv")
+#geraRelatorioUnidade(1,"lop_exercicios_turma02-2022-11-07.csv",[1,2,3,4,5,6,7],"alunos turma 02 lop 2023_1.csv","notas_uniao_u1_completo.csv")
 #geraRelatorioUnidade(1,"lop_exercicios_turma02-2022-11-07.csv",[1,2,3,4,5,6,7],"alunos_turma_02_2022_2.csv","notas_uniao_u1_completo.csv")
 
 
