@@ -29,5 +29,4 @@ padronizada_notas_u = pn.padroniza_sigaa(notas_dados, turma_sigaa)
 # remove linhas duplicadas
 padronizada_notas_u = padronizada_notas_u.drop_duplicates()
 
-
 padronizada_notas_u.to_csv("../saida/{}".format("teste.csv"), index=False)
